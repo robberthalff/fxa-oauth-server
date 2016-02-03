@@ -16,6 +16,7 @@ ADD LICENSE /app/LICENSE
 ADD README.md /app/README.md
 ADD package.json /app/package.json
 ADD npm-shrinkwrap.json /app/npm-shrinkwrap.json
+ADD Gruntfile.js
 
 ENV NODE_ENV=prod
 
