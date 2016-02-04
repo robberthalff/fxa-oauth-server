@@ -47,4 +47,4 @@ RUN npm i
 RUN apk del build-dependencies && \
     rm -rf /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp
 
-ENTRYPOINT exec npm start
+CMD ["node", "./bin/server"]
