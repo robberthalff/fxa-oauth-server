@@ -18,7 +18,8 @@ ADD package.json /app/package.json
 ADD npm-shrinkwrap.json /app/npm-shrinkwrap.json
 ADD Gruntfile.js /app/Gruntfile.js
 
-ENV NODE_ENV=prod
+# Prod requires notification events with aws
+ENV NODE_ENV=dev
 
 ENV ISSUER=api.accounts.test.com
 ENV VERIFICATION_URL=https://verifier.accounts.test.com/v2
